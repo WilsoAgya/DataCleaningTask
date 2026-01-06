@@ -63,6 +63,9 @@ email_format(df)
 print("----------CLEAN DATA-------------")
 print(df)
 
+#Write DataFrame to new CSV file
+df.to_csv('clean_practice.csv',index=False)
+
 
 
 
