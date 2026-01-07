@@ -32,21 +32,24 @@ def remove_duplicate_rows(x):
 #Handles proper email formatting
 def email_format(x):
     print("EMAIL FORMATTING")
+
     #Remove whitespace
     #Gets rid of underscore, replaces with .
-    #Replaces gmail with gmail.com
     #Puts email into lowercase()
-    x['email'] = x['email'].str.replace(r"\s", "", regex=True)\
-                         .str.replace("[_]", ".", regex=True)\
-                         .str.replace("gmail","gmail.com",regex=True)\
+    x['email'] = x['email'].str.replace("[_-]", ".", regex=True)\
                          .str.lower()
     #For all emails it concatenates values from first_name column with the rest of the email
-    #Replaces everything before the first period with lowercase values from the first_name column
-    x['email'] = x['first_name'].str.lower() + x['email'].str.replace(r'^[^.]+', '', regex=True)
+    #Proper format for email: Gets values from first column, converts it to lowercase, then replaces any spaces,punctuation, and non-word characters with nothing
+    x['email'] = (x['first_name'].str.lower().str.replace(r'\W+', '', regex=True) +
+                  '.' +
+    #Same format goes for appending the last name part of the email
+                  x['last_name'].str.lower().str.replace(r'\W+', '', regex=True) +
+                  '@gmail.com')
 
 
 #Removes whitespace for all columns
 def remove_whitespace(x):
+
     for col in x:
         x[col] = x[col].str.strip()
 
@@ -54,6 +57,7 @@ def remove_whitespace(x):
 
 print("----------RAW DATA--------------")
 print(df)
+df = df.dropna(subset=['first_name', 'last_name'])
 remove_whitespace(df)
 standardize_capitalization(df)
 df = remove_duplicate_rows(df)
@@ -64,7 +68,7 @@ print("----------CLEAN DATA-------------")
 print(df)
 
 #Write DataFrame to new CSV file
-df.to_csv('clean_practice.csv',index=False)
+df.to_csv('updated_clean_practice.csv',index=False)
 
 
 

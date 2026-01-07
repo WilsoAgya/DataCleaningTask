@@ -6,4 +6,49 @@ ALICE,smith,alice.smith@gmail
 bob ,Johnson , bob.johnson@gmail.com
 Bob, johnson, Bob.Johnson@gmail.com  
 maria ,GARCIA, M.Garcia@gmail.com
-maria,garcia, m.garcia@gmail.com  
+maria,garcia, m.garcia@gmail.com
+Liam ,O'Neil , liam.oneil@gmail.com
+liam,oneil,LIAM.ONEIL@GMAIL.COM
+Sophia,  Brown , sophia.brown@gmail.com
+ sophia ,brown,sophia.brown @gmail.com
+Noah,Nguyen,noah.nguyen@gmail
+NOAH ,nguyen , n.nguyen@gmail.com
+Emma,Clark,emma.clark@gmail.com
+emma , clark , emma..clark@gmail.com
+Ava,Martinez,ava_martinez@gmail.com
+AVA , martinez , avamartinez@gmail.com
+Ethan,Patel,ethan.patel@gmail.com
+ethan ,patel , e.patel@gmail.com
+Mia ,Khan , mia.khan@gmail.com
+MIA,khan,mia.khan@@gmail.com
+Lucas,Schmidt,lucas.schmidt@gmail.com
+ lucas , schmidt , lucas_schmidt@gmail.com
+Isabella, Rossi , isabella.rossi@gmail.com
+ISABELLA,rossi,isabella.rossi@GMAIL
+Daniel,Lee,daniel.lee@gmail.com
+ daniel , lee , daniellee@gmail.com
+Arjun ,Singh , arjun.singh@gmail.com
+ARJUN,singh,a.singh@gmail.com
+Zoe,McDonald,zoe.mcdonald@gmail.com
+ zoe , mcdonald , zoe.mcdonald@gmail.co
+Henry ,Wilson , henry.wilson@gmail.com
+HENRY,wilson,henry_wilson@gmail.com
+Olivia,Kim,olivia.kim@gmail.com
+olivia , kim , olivia.kim @gmail.com
+Mateo,Lopez,mateo.lopez@gmail.com
+mateo ,lopez , mateo-lopez@gmail.com
+李,,li@example.com
+Anne-Marie,O'Neil,anne.oneil@gmail.com
+Dr. John,Doe,dr.john.doe@gmail.com
+John,John,john.john@gmail.com
+Emma,Clark,emma.clark @gmail.com
+Noah,Nguyen,noah.nguyen@gamil.com
+Sophia,Brown,"sophia.brown@gmail.com "
+Liam,Wilson,liam+test@gmail.com
+Olivia,Kim,olivia.kim@gmail.co
+Ava,Martinez,ava_martinez@gmail.com
+Henry,Wilson,henry_wilson@gmail.com
+, ,
+"Daniel, Jr.",Lee,daniel.lee@gmail.com
+Maria,Garcia,mgarcia@gmail.com
+Maria,Garcia,m.garcia@gmail.com
